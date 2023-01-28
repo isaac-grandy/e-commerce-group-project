@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <div class="cart-popup hide">
+      <p class="cart-paragraph">Cart</p>
+
+      <div class="content-container hide">
+        <img
+          class="cart-image"
+          src="images/image-product-1-thumbnail.jpg"
+          alt="shoes"
+        />
+        <div class="full-cart-content">
+          <p>Fall Limited Edition Sneakers</p>
+          <p class="cart-price">
+            <span class="first-span"></span><span class="second-span"></span>
+          </p>
+        </div>
+        <img src="images/icon-delete.svg" alt="trash" class="trash" />
+      </div>
+      <p class="empty-paragraph">Your cart is empty.</p>
+      <button class="large-button hide checkout">Checkout</button>
+    </div>
+    <header>
+      <div class="left-header">
+        <img class="hamburger" src="images/icon-menu.svg" alt="menu" />
+        <h1>
+          <img src="images/logo.svg" alt="sneakers" />
+        </h1>
+        <div class="menu-container hide">
+          <div class="menu">
+            <img
+              class="close-icon"
+              src="images/icon-close.svg"
+              alt="close icon"
+            />
+            <nav>
+              <ul>
+                <li>Collections</li>
+                <li>Men</li>
+                <li>Women</li>
+                <li>About</li>
+                <li>Contact</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="right-header">
+        <div class="cart-container">
+          <img src="images/icon-cart.svg" alt="cart" />
+          <p class="cart-quantity hide"></p>
+        </div>
+        <nav>
+          <img src="images/image-avatar.png" alt="avatar" />
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="image-container">
+        <img
+          src="images/image-product-1.jpg"
+          alt="shoes"
+          class="current-image"
+        />
+        <img src="images/icon-next.svg" alt="left arrow" class="left arrow" />
+        <img src="images/icon-next.svg" alt="right arrow" class="right arrow" />
+      </div>
+      <div class="about-container">
+        <h2>SNEAKER COMPANY</h2>
+        <h3 class="name"></h3>
+        <p class="description"></p>
+        <div class="price-container">
+          <div class="total-discount">
+            <p class="total"></p>
+            <p class="discount"></p>
+          </div>
+          <p class="original"></p>
+        </div>
+        <div>
+          <div class="quantity-container">
+            <img src="images/icon-minus.svg" alt="icon minus" class="minus" />
+            <p class="quantity">0</p>
+            <img src="images/icon-plus.svg" alt="icon plus" class="plus" />
+          </div>
+          <button class="large-button add-cart" disabled="true">
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
